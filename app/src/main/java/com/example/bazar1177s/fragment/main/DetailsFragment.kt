@@ -20,26 +20,33 @@ import com.bumptech.glide.Glide
 import com.example.bazar1177s.R
 import com.example.bazar1177s.databinding.FragmentDetailsBinding
 import com.example.bazar1177s.model.DiscountProduct
+import com.example.bazar1177s.model.Product
+import com.example.bazar1177s.model.ProductOrder
 import com.example.bazar1177s.utils.TextWatcherWrapper
 import com.example.bazar1177s.utils.UiStateObject
 import com.example.bazar1177s.viewmodel.DetailsViewModel
 import com.google.gson.Gson
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 private const val TAG = "DetailsFragment"
+
 @AndroidEntryPoint
 class DetailsFragment : Fragment(R.layout.fragment_details) {
-     var productId:Int = 0
+    var productId: Int = 0
+    private var amount: Int = 0
+    private lateinit var product: ProductOrder
     private val binding by viewBinding(FragmentDetailsBinding::bind)
     private val viewModel: DetailsViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let{
+        arguments?.let {
             productId = it.getInt("productId")
         }
 
         viewModel.getProduct(productId)
+        viewModel.getAmount(productId = productId.toLong())
 
     }
 
@@ -58,7 +65,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             }
         }
 
-        with(binding){
+        with(binding) {
             icBack.setOnClickListener {
                 activity?.onBackPressed()
             }
@@ -66,10 +73,20 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                 findNavController().navigate(R.id.action_detailsFragment_to_orderFragment)
             }
 
-        binding.icBack.setOnClickListener {
-            findNavController().navigateUp()
-        }
+            icBack.setOnClickListener {
+                findNavController().navigateUp()
+            }
 
+            ivPlus.setOnClickListener {
+                amount++
+                tvProductWeight.text = "$amount ${product.type}"
+            }
+            ivMinus.setOnClickListener {
+                if (amount > 0) {
+                    amount--
+                    tvProductWeight.text = "$amount ${product.type}"
+                }
+            }
 
         }
     }
@@ -85,15 +102,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                         is UiStateObject.SUCCESS -> {
                             cancelLoading()
                             Log.d(TAG + "Image", "Image: ${it.data.image}")
-
-                            val imageByteArray = Base64.decode(it.data.image.data, Base64.DEFAULT)
-                            Glide.with(binding.ivProduct).load(imageByteArray).into(binding.ivProduct)
-                            binding.tvProductName.text=it.data.name
-                            binding.tvProductPrice.text=it.data.price.toString()
-                            binding.tvProductDescription.text=it.data.about
-                            binding.ivPlus.visibility = View.VISIBLE
-                            binding.ivMinus.visibility = View.VISIBLE
-                            binding.tvProductWeight.visibility = View.VISIBLE
+                            initDetails(it.data)
                         }
                         is UiStateObject.ERROR -> {
                             cancelLoading()
@@ -104,6 +113,46 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                     }
                 }
             }
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.amount.collect {
+                    when (it) {
+                        is UiStateObject.LOADING -> {
+
+                        }
+                        is UiStateObject.SUCCESS -> {
+                            amount = it.data
+                        }
+                        is UiStateObject.ERROR -> {
+                            amount = 0
+                        }
+                        else -> Unit
+                    }
+                }
+            }
+        }
+    }
+
+    private fun initDetails(data: Product) {
+        val imageByteArray = Base64.decode(data.image.data, Base64.DEFAULT)
+        Glide.with(binding.ivProduct).load(imageByteArray)
+            .into(binding.ivProduct)
+        binding.tvProductName.text = data.name
+        binding.tvProductPrice.text = data.price.toString()
+        binding.tvProductDescription.text = data.about
+        binding.ivPlus.visibility = View.VISIBLE
+        binding.ivMinus.visibility = View.VISIBLE
+        binding.tvProductWeight.visibility = View.VISIBLE
+
+        product.apply {
+            type = data.type.name
+            entity = amount
+            image = data.image.data
+            name = data.name
+            price = data.price
+            total = entity * price
+            productId = data.id
         }
     }
 
@@ -124,6 +173,13 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.pbLoading.visibility = View.VISIBLE
     }
 
+    override fun onPause() {
+        product.entity = amount
+        product.total = product.price * product.entity
 
+        if (product.entity > 0) viewModel.saveProduct(product)
+
+        super.onPause()
+    }
 
 }

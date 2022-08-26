@@ -32,6 +32,8 @@ import java.util.Set;
 public final class AppDatabase_Impl extends AppDatabase {
   private volatile ProductDao _productDao;
 
+  private volatile ProductOrderDao _productOrderDao;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
@@ -39,14 +41,16 @@ public final class AppDatabase_Impl extends AppDatabase {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Product1` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Products` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `amount` INTEGER NOT NULL, `typeId` INTEGER NOT NULL, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `ordered_products` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `image` TEXT NOT NULL, `name` TEXT NOT NULL, `price` INTEGER NOT NULL, `type` TEXT NOT NULL, `entity` INTEGER NOT NULL, `total` INTEGER NOT NULL, `productId` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9c7d287827a57ad044147f6a589ff5b9')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '272028e8398d62834cc0c78847054597')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `Product1`");
         _db.execSQL("DROP TABLE IF EXISTS `Products`");
+        _db.execSQL("DROP TABLE IF EXISTS `ordered_products`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -111,9 +115,27 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoProducts + "\n"
                   + " Found:\n" + _existingProducts);
         }
+        final HashMap<String, TableInfo.Column> _columnsOrderedProducts = new HashMap<String, TableInfo.Column>(8);
+        _columnsOrderedProducts.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("image", new TableInfo.Column("image", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("price", new TableInfo.Column("price", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("type", new TableInfo.Column("type", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("entity", new TableInfo.Column("entity", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("total", new TableInfo.Column("total", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsOrderedProducts.put("productId", new TableInfo.Column("productId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysOrderedProducts = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesOrderedProducts = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoOrderedProducts = new TableInfo("ordered_products", _columnsOrderedProducts, _foreignKeysOrderedProducts, _indicesOrderedProducts);
+        final TableInfo _existingOrderedProducts = TableInfo.read(_db, "ordered_products");
+        if (! _infoOrderedProducts.equals(_existingOrderedProducts)) {
+          return new RoomOpenHelper.ValidationResult(false, "ordered_products(com.example.bazar1177s.model.ProductOrder).\n"
+                  + " Expected:\n" + _infoOrderedProducts + "\n"
+                  + " Found:\n" + _existingOrderedProducts);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "9c7d287827a57ad044147f6a589ff5b9", "dcfd8e1687d856c25ebd1d22289391ba");
+    }, "272028e8398d62834cc0c78847054597", "50d301ed5cc49a4a6443bfae0fb7cde4");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -126,7 +148,7 @@ public final class AppDatabase_Impl extends AppDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "Product1","Products");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "Product1","Products","ordered_products");
   }
 
   @Override
@@ -137,6 +159,7 @@ public final class AppDatabase_Impl extends AppDatabase {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `Product1`");
       _db.execSQL("DELETE FROM `Products`");
+      _db.execSQL("DELETE FROM `ordered_products`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -151,6 +174,7 @@ public final class AppDatabase_Impl extends AppDatabase {
   protected Map<Class<?>, List<Class<?>>> getRequiredTypeConverters() {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
     _typeConvertersMap.put(ProductDao.class, ProductDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(ProductOrderDao.class, ProductOrderDao_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -176,6 +200,20 @@ public final class AppDatabase_Impl extends AppDatabase {
           _productDao = new ProductDao_Impl(this);
         }
         return _productDao;
+      }
+    }
+  }
+
+  @Override
+  public ProductOrderDao getProductOrderDao() {
+    if (_productOrderDao != null) {
+      return _productOrderDao;
+    } else {
+      synchronized(this) {
+        if(_productOrderDao == null) {
+          _productOrderDao = new ProductOrderDao_Impl(this);
+        }
+        return _productOrderDao;
       }
     }
   }

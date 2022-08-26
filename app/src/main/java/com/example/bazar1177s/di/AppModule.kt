@@ -3,6 +3,7 @@ package com.example.bazar1177s.di
 import android.app.Application
 import com.example.bazar1177s.data.db.AppDatabase
 import com.example.bazar1177s.data.db.ProductDao
+import com.example.bazar1177s.data.db.ProductOrderDao
 import com.example.bazar1177s.network.ProductService
 import com.example.bazar1177s.network.Server
 import com.example.bazar1177s.network.Server.IS_TESTER
@@ -43,5 +44,11 @@ class AppModule {
     @Singleton
     fun tvShowDao(appDatabase: AppDatabase): ProductDao {
         return appDatabase.getProductDao()
+    }
+
+    @Provides
+    @Singleton
+    fun productOrderDao(appDatabase: AppDatabase): ProductOrderDao {
+        return appDatabase.getProductOrderDao()
     }
 }

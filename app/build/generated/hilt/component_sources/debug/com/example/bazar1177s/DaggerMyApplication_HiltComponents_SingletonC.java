@@ -10,9 +10,11 @@ import androidx.lifecycle.ViewModel;
 import com.example.bazar1177s.activity.MainActivity;
 import com.example.bazar1177s.data.db.AppDatabase;
 import com.example.bazar1177s.data.db.ProductDao;
+import com.example.bazar1177s.data.db.ProductOrderDao;
 import com.example.bazar1177s.data.pref.AppPref;
 import com.example.bazar1177s.di.AppModule;
 import com.example.bazar1177s.di.AppModule_AppDatabaseFactory;
+import com.example.bazar1177s.di.AppModule_ProductOrderDaoFactory;
 import com.example.bazar1177s.di.AppModule_ProvideFirebaseAuthFactory;
 import com.example.bazar1177s.di.AppModule_TvShowDaoFactory;
 import com.example.bazar1177s.di.ServerModule;
@@ -499,7 +501,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
     }
 
     private DetailsRepository detailsRepository() {
-      return new DetailsRepository(singletonCImpl.productService(), singletonCImpl.tvShowDaoProvider.get());
+      return new DetailsRepository(singletonCImpl.productService(), singletonCImpl.productOrderDaoProvider.get());
     }
 
     private HomeRepository homeRepository() {
@@ -648,6 +650,8 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     private Provider<FirebaseAuth> provideFirebaseAuthProvider;
 
+    private Provider<ProductOrderDao> productOrderDaoProvider;
+
     private SingletonCImpl(AppModule appModuleParam,
         ApplicationContextModule applicationContextModuleParam, ServerModule serverModuleParam) {
       this.applicationContextModule = applicationContextModuleParam;
@@ -671,6 +675,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       this.appDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<AppDatabase>(singletonCImpl, 4));
       this.tvShowDaoProvider = DoubleCheck.provider(new SwitchingProvider<ProductDao>(singletonCImpl, 3));
       this.provideFirebaseAuthProvider = DoubleCheck.provider(new SwitchingProvider<FirebaseAuth>(singletonCImpl, 5));
+      this.productOrderDaoProvider = DoubleCheck.provider(new SwitchingProvider<ProductOrderDao>(singletonCImpl, 6));
     }
 
     @Override
@@ -723,6 +728,9 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
           case 5: // com.google.firebase.auth.FirebaseAuth 
           return (T) AppModule_ProvideFirebaseAuthFactory.provideFirebaseAuth(singletonCImpl.appModule);
+
+          case 6: // com.example.bazar1177s.data.db.ProductOrderDao 
+          return (T) AppModule_ProductOrderDaoFactory.productOrderDao(singletonCImpl.appModule, singletonCImpl.appDatabaseProvider.get());
 
           default: throw new AssertionError(id);
         }

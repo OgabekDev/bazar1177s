@@ -2598,6 +2598,7 @@ drawable ic_apple
 drawable ic_arrow_right
 drawable ic_back
 drawable ic_basket
+drawable ic_cancel
 drawable ic_circle_minus
 drawable ic_circle_plus
 drawable ic_clear_history
@@ -2963,6 +2964,8 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivCancel
+id ivProduct
 id iv_ads
 id iv_back
 id iv_brand
@@ -3236,6 +3239,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAmount
+id tvProductName
+id tvProductPrice
+id tvTotal
 id tv_ads_cost
 id tv_ads_name
 id tv_back
@@ -3404,6 +3411,7 @@ layout fragment_splash
 layout item_cart_horizontal
 layout item_discount
 layout item_main_ads
+layout item_product_order
 layout item_shop
 layout item_shopping_cart
 layout m3_alert_dialog
