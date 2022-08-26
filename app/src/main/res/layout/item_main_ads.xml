@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cl_carousel_product"
+    android:layout_height="220dp">
+
+    <ImageView
+        android:id="@+id/iv_ads"
+        android:layout_width="209dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/green_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <TextView
+        android:id="@+id/tv_ads_name"
+        android:layout_width="188dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end|center_vertical"
+        android:text="Semeryanka olma"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_ads"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/iv_ads"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ads_name">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 kg /"
+            android:textSize="16sp"
+            android:gravity="end|center_vertical"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="268dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/cost_background" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_ads_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:text="24,000"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="27dp"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:text=" so'm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bazar 1177</string>
+    <string name="str_total_cost">Umumiy Narx:</string>
+    <string name="str_cost">20,155,000</string>
+    <string name="str_so_m">so\'m</string>
+    <string name="str_deliver">Yetkazib berish:</string>
+    <string name="str_fruit">Apelsin</string>
+    <string name="str_weight">0 kg</string>
+    <string name="str_press_to_confirm">Buyurtma tasdiqlash uchun bosing</string>
+    <string name="str_back">Orqaga</string>
+    <string name="str_product_details">Mahsulot tavsifi</string>
+    <string name="str_product_description">GOLDEN\" navli olma mevasi - ko\'plab  \n foydali vitaminlarni o\'z ichiga oladi va uni  \n gazak sifatida iste\'mol qilsangiz qorningiz \n kun bo’y to’q bolib turadi.  \"GOLDEN\" navli olma mevasi doim siz uchun  \n mavjud va “Korzinka supermarketlar tarmog\'ida \n uni arzon narxlarda topishingiz va buyurtma bilan \n sotib olishingiz mumkin.</string>
+    <string name="str_location">Qashqadaryo</string>
+    <string name="str_abort_book">Buyurtmani bekor qilish uchun bosing</string>
+</resources>

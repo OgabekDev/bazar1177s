@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="black_70">#00222B</color>
+    <color name="button_background">#143656</color>
+    <color name="color_main_dark">#00222B</color>
+    <color name="color_main_red">#E4002B</color>
+    <color name="green">#2BB033</color>
+    <color name="grey_sum">#C4C4C4</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#E4002B</color>
+    <color name="rounded_background">#FF0000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Bazar 1177</string>
+    <string name="default_web_client_id" translatable="false">163236589338-gpno7p651jd5cvcjrde04hl34a2fgq0a.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">163236589338</string>
+    <string name="google_api_key" translatable="false">AIzaSyAXUX4lkJh-X0HZsVwET7wM4jiKqA22CjA</string>
+    <string name="google_app_id" translatable="false">1:163236589338:android:81a59f9127cea3dd7fc6a3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAXUX4lkJh-X0HZsVwET7wM4jiKqA22CjA</string>
+    <string name="google_storage_bucket" translatable="false">bazar1177-7bb37.appspot.com</string>
+    <string name="project_id" translatable="false">bazar1177-7bb37</string>
+    <string name="str_abort_book">Buyurtmani bekor qilish uchun bosing</string>
+    <string name="str_back">Orqaga</string>
+    <string name="str_cost">20,155,000</string>
+    <string name="str_deliver">Yetkazib berish:</string>
+    <string name="str_fruit">Apelsin</string>
+    <string name="str_location">Qashqadaryo</string>
+    <string name="str_press_to_confirm">Buyurtma tasdiqlash uchun bosing</string>
+    <string name="str_product_description">GOLDEN\" navli olma mevasi - ko\'plab  \n foydali vitaminlarni o\'z ichiga oladi va uni  \n gazak sifatida iste\'mol qilsangiz qorningiz \n kun bo’y to’q bolib turadi.  \"GOLDEN\" navli olma mevasi doim siz uchun  \n mavjud va “Korzinka supermarketlar tarmog\'ida \n uni arzon narxlarda topishingiz va buyurtma bilan \n sotib olishingiz mumkin.</string>
+    <string name="str_product_details">Mahsulot tavsifi</string>
+    <string name="str_so_m">so\'m</string>
+    <string name="str_total_cost">Umumiy Narx:</string>
+    <string name="str_weight">0 kg</string>
+    <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+
+    </style>
+    <style name="HelperTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+    <style name="Theme.Bazar1177" parent="Theme.MaterialComponents.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+
+
+        <item name="android:statusBarColor" ns1:targetApi="l">#00FFFFFF</item>
+        
+    </style>
+    <style name="circle">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
