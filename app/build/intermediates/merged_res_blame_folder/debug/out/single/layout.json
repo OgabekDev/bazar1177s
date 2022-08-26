@@ -1,66 +1,70 @@
 [
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_cart_horizontal.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/item_cart_horizontal.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_shopping_cart.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_shopping_cart.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_shopping_cart.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/item_shopping_cart.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_main_ads.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_main_ads.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_confirm.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_confirm.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_auth.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_auth.xml"
+    },
+    {
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_order.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_order.xml"
+    },
+    {
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_discount.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_discount.xml"
+    },
+    {
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_shop.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_shop.xml"
+    },
+    {
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_cart_horizontal.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_cart_horizontal.xml"
+    },
+    {
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_splash.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_splash.xml"
     },
     {
         "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_product_order.xml",
         "source": "com.example.bazar1177s.app-main-59:/layout/item_product_order.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_order.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_order.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_confirm.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_confirm.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_splash.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_splash.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_history.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_history.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_main_ads.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/item_main_ads.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_profile.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_history.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_history.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_details.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_details.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_details.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_details.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_basket.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_basket.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/activity_main.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/activity_main.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_product_order.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_product_order.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_shop.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/item_shop.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_home.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_auth.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_auth.xml"
-    },
-    {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_basket.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_basket.xml"
-    },
-    {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_profile.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_profile.xml"
-    },
-    {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/item_discount.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/item_discount.xml"
-    },
-    {
-        "merged": "com.example.bazar1177s.app-mergeDebugResources-56:/layout/fragment_home.xml",
-        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_home.xml"
+        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/activity_main.xml"
     }
 ]
