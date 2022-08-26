@@ -1,2 +1,0 @@
-/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk
-/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk

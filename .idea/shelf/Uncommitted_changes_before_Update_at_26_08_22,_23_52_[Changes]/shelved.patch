@@ -1,0 +1,106 @@
+Index: app/build/intermediates/cxx/create_cxx_tasks_21_timing.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># C/C++ build system timings\ncreate_cxx_tasks\n  create-initial-cxx-model 62ms\n  [gap of 15ms]\ncreate_cxx_tasks completed in 78ms\n\n# C/C++ build system timings\ncreate_cxx_tasks\n  create-initial-cxx-model 41ms\n  [gap of 11ms]\ncreate_cxx_tasks completed in 53ms\n\n# C/C++ build system timings\ncreate_cxx_tasks\n  create-initial-cxx-model\n    [gap of 16ms]\n    create-variant-model 12ms\n  create-initial-cxx-model completed in 37ms\n  [gap of 16ms]\ncreate_cxx_tasks completed in 53ms\n\n
+===================================================================
+diff --git a/app/build/intermediates/cxx/create_cxx_tasks_21_timing.txt b/app/build/intermediates/cxx/create_cxx_tasks_21_timing.txt
+--- a/app/build/intermediates/cxx/create_cxx_tasks_21_timing.txt	
++++ b/app/build/intermediates/cxx/create_cxx_tasks_21_timing.txt	
+@@ -19,3 +19,9 @@
+   [gap of 16ms]
+ create_cxx_tasks completed in 53ms
+ 
++# C/C++ build system timings
++create_cxx_tasks
++  create-initial-cxx-model 40ms
++  [gap of 16ms]
++create_cxx_tasks completed in 57ms
++
+Index: app/build/intermediates/cxx/Debug/626116g3/meta/x86/metadata_generation_record.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[\n  {\n    \"level_\": 0,\n    \"message_\": \"Start JSON generation. Platform version: 21 min SDK version: x86\",\n    \"file_\": \"/Users/ogabekmatyakubov/Downloads/Telegram/bazar1177B12-master/app/src/main/jni/Android.mk\",\n    \"tag_\": \"debug|x86\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 875084679\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"JSON \\u0027/Users/ogabekmatyakubov/Downloads/Telegram/bazar1177B12-master/app/build/.cxx/Debug/626116g3/x86/android_gradle_build.json\\u0027 was up-to-date\",\n    \"file_\": \"/Users/ogabekmatyakubov/Downloads/Telegram/bazar1177B12-master/app/src/main/jni/Android.mk\",\n    \"tag_\": \"debug|x86\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 424973901\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"JSON generation completed without problems\",\n    \"file_\": \"/Users/ogabekmatyakubov/Downloads/Telegram/bazar1177B12-master/app/src/main/jni/Android.mk\",\n    \"tag_\": \"debug|x86\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 666973844\n  }\n]
+===================================================================
+diff --git a/app/build/intermediates/cxx/Debug/626116g3/meta/x86/metadata_generation_record.json b/app/build/intermediates/cxx/Debug/626116g3/meta/x86/metadata_generation_record.json
+--- a/app/build/intermediates/cxx/Debug/626116g3/meta/x86/metadata_generation_record.json	
++++ b/app/build/intermediates/cxx/Debug/626116g3/meta/x86/metadata_generation_record.json	
+@@ -11,7 +11,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 875084679
++    "memoizedHashCode": 994493144
+   },
+   {
+     "level_": 0,
+@@ -25,7 +25,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 424973901
++    "memoizedHashCode": 544382366
+   },
+   {
+     "level_": 0,
+@@ -39,6 +39,6 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 666973844
++    "memoizedHashCode": 786382309
+   }
+ ]
+\ No newline at end of file
+Index: app/build/intermediates/cxx/ndk_locator_record_2a6j1c1y.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[\n  {\n    \"level_\": 0,\n    \"message_\": \"android.ndkVersion from module build.gradle is [24.0.8215888]\",\n    \"file_\": \"\",\n    \"tag_\": \"\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": -1439325008\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"android.ndkPath from module build.gradle is not set\",\n    \"file_\": \"\",\n    \"tag_\": \"\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 1330614466\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"ndk.dir in local.properties is not set\",\n    \"file_\": \"\",\n    \"tag_\": \"\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 2035075659\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"Not considering ANDROID_NDK_HOME because support was removed after deprecation period.\",\n    \"file_\": \"\",\n    \"tag_\": \"\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": -397077567\n  },\n  {\n    \"level_\": 0,\n    \"message_\": \"sdkFolder is /Users/ogabekmatyakubov/Library/Android/sdk\",\n    \"file_\": \"\",\n    \"tag_\": \"\",\n    \"diagnosticCode_\": 0,\n    \"memoizedIsInitialized\": 1,\n    \"unknownFields\": {\n      \"fields\": {},\n      \"fieldsDescending\": {}\n    },\n    \"memoizedSize\": -1,\n    \"memoizedHashCode\": 1264075314\n  }\n]
+===================================================================
+diff --git a/app/build/intermediates/cxx/ndk_locator_record_2a6j1c1y.log b/app/build/intermediates/cxx/ndk_locator_record_2a6j1c1y.log
+--- a/app/build/intermediates/cxx/ndk_locator_record_2a6j1c1y.log	
++++ b/app/build/intermediates/cxx/ndk_locator_record_2a6j1c1y.log	
+@@ -11,7 +11,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": -1439325008
++    "memoizedHashCode": -110878952
+   },
+   {
+     "level_": 0,
+@@ -25,7 +25,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 1330614466
++    "memoizedHashCode": -1635906774
+   },
+   {
+     "level_": 0,
+@@ -39,7 +39,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 2035075659
++    "memoizedHashCode": -931445581
+   },
+   {
+     "level_": 0,
+@@ -53,7 +53,7 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": -397077567
++    "memoizedHashCode": 931368489
+   },
+   {
+     "level_": 0,
+@@ -67,6 +67,6 @@
+       "fieldsDescending": {}
+     },
+     "memoizedSize": -1,
+-    "memoizedHashCode": 1264075314
++    "memoizedHashCode": -1702445926
+   }
+ ]
+\ No newline at end of file

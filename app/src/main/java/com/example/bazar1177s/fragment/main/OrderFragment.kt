@@ -15,18 +15,12 @@ import com.example.bazar1177s.databinding.FragmentOrderBinding
 import com.example.bazar1177s.utils.UiStateList
 import com.example.bazar1177s.utils.UiStateObject
 import com.example.bazar1177s.viewmodel.OrderProductViewModel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class OrderFragment : Fragment(R.layout.fragment_order) {
     private val binding by viewBinding(FragmentOrderBinding::bind)
     private val adapter by lazy { ProductOrderAdapter() }
     private val viewModel: OrderProductViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

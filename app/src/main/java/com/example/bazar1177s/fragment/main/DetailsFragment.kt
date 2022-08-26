@@ -144,16 +144,22 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.ivPlus.visibility = View.VISIBLE
         binding.ivMinus.visibility = View.VISIBLE
         binding.tvProductWeight.visibility = View.VISIBLE
+        binding.tvProductWeight.text = "0 ${data.type.name}"
 
-        product.apply {
-            type = data.type.name
-            entity = amount
-            image = data.image.data
-            name = data.name
-            price = data.price
-            total = entity * price
-            productId = data.id
-        }
+//        product.apply {
+//            type = data.type.name
+//            entity = amount
+//            image = data.image.data
+//            name = data.name
+//            price = data.price
+//            total = entity * price
+//            productId = data.id
+//        }
+
+        product = ProductOrder(type = data.type.name, entity = amount,
+            image = data.image.data, name = data.name, price = data.price,
+            total = amount * data.price, id = data.id)
+
     }
 
     private fun showError(message: String) {
@@ -178,6 +184,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         product.total = product.price * product.entity
 
         if (product.entity > 0) viewModel.saveProduct(product)
+
+        amount = 0
 
         super.onPause()
     }

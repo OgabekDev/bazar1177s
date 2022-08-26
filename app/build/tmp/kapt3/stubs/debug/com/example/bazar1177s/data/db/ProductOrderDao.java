@@ -28,7 +28,7 @@ public abstract interface ProductOrderDao {
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation);
     
     @org.jetbrains.annotations.Nullable()
-    @androidx.room.Query(value = "SELECT entity FROM ordered_products WHERE productId=:productId")
+    @androidx.room.Query(value = "SELECT entity FROM ordered_products WHERE id=:productId")
     public abstract java.lang.Object getAmount(long productId, @org.jetbrains.annotations.NotNull()
     kotlin.coroutines.Continuation<? super java.lang.Integer> continuation);
 }

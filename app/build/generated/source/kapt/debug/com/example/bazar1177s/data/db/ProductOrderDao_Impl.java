@@ -14,7 +14,6 @@ import com.example.bazar1177s.model.ProductOrder;
 import java.lang.Class;
 import java.lang.Exception;
 import java.lang.Integer;
-import java.lang.Long;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
@@ -41,16 +40,12 @@ public final class ProductOrderDao_Impl implements ProductOrderDao {
     this.__insertionAdapterOfProductOrder = new EntityInsertionAdapter<ProductOrder>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `ordered_products` (`id`,`image`,`name`,`price`,`type`,`entity`,`total`,`productId`) VALUES (?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `ordered_products` (`id`,`image`,`name`,`price`,`type`,`entity`,`total`) VALUES (?,?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, ProductOrder value) {
-        if (value.getId() == null) {
-          stmt.bindNull(1);
-        } else {
-          stmt.bindLong(1, value.getId());
-        }
+        stmt.bindLong(1, value.getId());
         if (value.getImage() == null) {
           stmt.bindNull(2);
         } else {
@@ -69,7 +64,6 @@ public final class ProductOrderDao_Impl implements ProductOrderDao {
         }
         stmt.bindLong(6, value.getEntity());
         stmt.bindLong(7, value.getTotal());
-        stmt.bindLong(8, value.getProductId());
       }
     };
     this.__preparedStmtOfDeleteProduct = new SharedSQLiteStatement(__db) {
@@ -163,16 +157,11 @@ public final class ProductOrderDao_Impl implements ProductOrderDao {
           final int _cursorIndexOfType = CursorUtil.getColumnIndexOrThrow(_cursor, "type");
           final int _cursorIndexOfEntity = CursorUtil.getColumnIndexOrThrow(_cursor, "entity");
           final int _cursorIndexOfTotal = CursorUtil.getColumnIndexOrThrow(_cursor, "total");
-          final int _cursorIndexOfProductId = CursorUtil.getColumnIndexOrThrow(_cursor, "productId");
           final List<ProductOrder> _result = new ArrayList<ProductOrder>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final ProductOrder _item;
-            final Long _tmpId;
-            if (_cursor.isNull(_cursorIndexOfId)) {
-              _tmpId = null;
-            } else {
-              _tmpId = _cursor.getLong(_cursorIndexOfId);
-            }
+            final long _tmpId;
+            _tmpId = _cursor.getLong(_cursorIndexOfId);
             final String _tmpImage;
             if (_cursor.isNull(_cursorIndexOfImage)) {
               _tmpImage = null;
@@ -197,9 +186,7 @@ public final class ProductOrderDao_Impl implements ProductOrderDao {
             _tmpEntity = _cursor.getInt(_cursorIndexOfEntity);
             final long _tmpTotal;
             _tmpTotal = _cursor.getLong(_cursorIndexOfTotal);
-            final long _tmpProductId;
-            _tmpProductId = _cursor.getLong(_cursorIndexOfProductId);
-            _item = new ProductOrder(_tmpId,_tmpImage,_tmpName,_tmpPrice,_tmpType,_tmpEntity,_tmpTotal,_tmpProductId);
+            _item = new ProductOrder(_tmpId,_tmpImage,_tmpName,_tmpPrice,_tmpType,_tmpEntity,_tmpTotal);
             _result.add(_item);
           }
           return _result;
@@ -213,7 +200,7 @@ public final class ProductOrderDao_Impl implements ProductOrderDao {
 
   @Override
   public Object getAmount(final long productId, final Continuation<? super Integer> continuation) {
-    final String _sql = "SELECT entity FROM ordered_products WHERE productId=?";
+    final String _sql = "SELECT entity FROM ordered_products WHERE id=?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, productId);

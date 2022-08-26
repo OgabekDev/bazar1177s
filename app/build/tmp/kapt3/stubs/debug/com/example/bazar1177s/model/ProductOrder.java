@@ -3,11 +3,10 @@ package com.example.bazar1177s.model;
 import java.lang.System;
 
 @androidx.room.Entity(tableName = "ordered_products")
-@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b%\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0087\b\u0018\u00002\u00020\u0001BI\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\rJ\u0010\u0010%\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003\u00a2\u0006\u0002\u0010\u0013J\t\u0010&\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\'\u001a\u00020\u0005H\u00c6\u0003J\t\u0010(\u001a\u00020\u0003H\u00c6\u0003J\t\u0010)\u001a\u00020\u0005H\u00c6\u0003J\t\u0010*\u001a\u00020\nH\u00c6\u0003J\t\u0010+\u001a\u00020\u0003H\u00c6\u0003J\t\u0010,\u001a\u00020\u0003H\u00c6\u0003J`\u0010-\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\u0003H\u00c6\u0001\u00a2\u0006\u0002\u0010.J\u0013\u0010/\u001a\u0002002\b\u00101\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u00102\u001a\u00020\nH\u00d6\u0001J\t\u00103\u001a\u00020\u0005H\u00d6\u0001R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0002\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004\u00a2\u0006\n\n\u0002\u0010\u0014\u001a\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0006\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0016\"\u0004\b\u001a\u0010\u0018R\u001a\u0010\u0007\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u001a\u0010\f\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u001c\"\u0004\b \u0010\u001eR\u001a\u0010\u000b\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\u001c\"\u0004\b\"\u0010\u001eR\u001a\u0010\b\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010\u0016\"\u0004\b$\u0010\u0018\u00a8\u00064"}, d2 = {"Lcom/example/bazar1177s/model/ProductOrder;", "", "id", "", "image", "", "name", "price", "type", "entity", "", "total", "productId", "(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IJJ)V", "getEntity", "()I", "setEntity", "(I)V", "getId", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getImage", "()Ljava/lang/String;", "setImage", "(Ljava/lang/String;)V", "getName", "setName", "getPrice", "()J", "setPrice", "(J)V", "getProductId", "setProductId", "getTotal", "setTotal", "getType", "setType", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IJJ)Lcom/example/bazar1177s/model/ProductOrder;", "equals", "", "other", "hashCode", "toString", "app_debug"})
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u001e\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0087\b\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\fJ\t\u0010 \u001a\u00020\u0003H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\t\u0010#\u001a\u00020\u0003H\u00c6\u0003J\t\u0010$\u001a\u00020\u0005H\u00c6\u0003J\t\u0010%\u001a\u00020\nH\u00c6\u0003J\t\u0010&\u001a\u00020\u0003H\u00c6\u0003JO\u0010\'\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\u0003H\u00c6\u0001J\u0013\u0010(\u001a\u00020)2\b\u0010*\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010+\u001a\u00020\nH\u00d6\u0001J\t\u0010,\u001a\u00020\u0005H\u00d6\u0001R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u001a\u0010\u0006\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0014\"\u0004\b\u0018\u0010\u0016R\u001a\u0010\u0007\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0012\"\u0004\b\u001a\u0010\u001bR\u001a\u0010\u000b\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0012\"\u0004\b\u001d\u0010\u001bR\u001a\u0010\b\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u0014\"\u0004\b\u001f\u0010\u0016\u00a8\u0006-"}, d2 = {"Lcom/example/bazar1177s/model/ProductOrder;", "", "id", "", "image", "", "name", "price", "type", "entity", "", "total", "(JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;IJ)V", "getEntity", "()I", "setEntity", "(I)V", "getId", "()J", "getImage", "()Ljava/lang/String;", "setImage", "(Ljava/lang/String;)V", "getName", "setName", "getPrice", "setPrice", "(J)V", "getTotal", "setTotal", "getType", "setType", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "", "other", "hashCode", "toString", "app_debug"})
 public final class ProductOrder {
-    @org.jetbrains.annotations.Nullable()
-    @androidx.room.PrimaryKey(autoGenerate = true)
-    private final java.lang.Long id = null;
+    @androidx.room.PrimaryKey()
+    private final long id = 0L;
     @org.jetbrains.annotations.NotNull()
     private java.lang.String image;
     @org.jetbrains.annotations.NotNull()
@@ -17,14 +16,12 @@ public final class ProductOrder {
     private java.lang.String type;
     private int entity;
     private long total;
-    private long productId;
     
     @org.jetbrains.annotations.NotNull()
-    public final com.example.bazar1177s.model.ProductOrder copy(@org.jetbrains.annotations.Nullable()
-    java.lang.Long id, @org.jetbrains.annotations.NotNull()
+    public final com.example.bazar1177s.model.ProductOrder copy(long id, @org.jetbrains.annotations.NotNull()
     java.lang.String image, @org.jetbrains.annotations.NotNull()
     java.lang.String name, long price, @org.jetbrains.annotations.NotNull()
-    java.lang.String type, int entity, long total, long productId) {
+    java.lang.String type, int entity, long total) {
         return null;
     }
     
@@ -45,22 +42,19 @@ public final class ProductOrder {
         return null;
     }
     
-    public ProductOrder(@org.jetbrains.annotations.Nullable()
-    java.lang.Long id, @org.jetbrains.annotations.NotNull()
+    public ProductOrder(long id, @org.jetbrains.annotations.NotNull()
     java.lang.String image, @org.jetbrains.annotations.NotNull()
     java.lang.String name, long price, @org.jetbrains.annotations.NotNull()
-    java.lang.String type, int entity, long total, long productId) {
+    java.lang.String type, int entity, long total) {
         super();
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Long component1() {
-        return null;
+    public final long component1() {
+        return 0L;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Long getId() {
-        return null;
+    public final long getId() {
+        return 0L;
     }
     
     @org.jetbrains.annotations.NotNull()
@@ -136,16 +130,5 @@ public final class ProductOrder {
     }
     
     public final void setTotal(long p0) {
-    }
-    
-    public final long component8() {
-        return 0L;
-    }
-    
-    public final long getProductId() {
-        return 0L;
-    }
-    
-    public final void setProductId(long p0) {
     }
 }

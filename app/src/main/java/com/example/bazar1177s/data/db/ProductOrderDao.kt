@@ -18,6 +18,6 @@ interface ProductOrderDao {
     @Query("DELETE FROM ordered_products")
     suspend fun clearOrderedProducts()
 
-    @Query("SELECT entity FROM ordered_products WHERE productId=:productId")
+    @Query("SELECT entity FROM ordered_products WHERE id=:productId")
     suspend fun getAmount(productId: Long): Int
 }

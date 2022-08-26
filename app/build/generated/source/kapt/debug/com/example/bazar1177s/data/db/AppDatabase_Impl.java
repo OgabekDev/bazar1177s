@@ -41,9 +41,9 @@ public final class AppDatabase_Impl extends AppDatabase {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Product1` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Products` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `amount` INTEGER NOT NULL, `typeId` INTEGER NOT NULL, PRIMARY KEY(`id`))");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `ordered_products` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `image` TEXT NOT NULL, `name` TEXT NOT NULL, `price` INTEGER NOT NULL, `type` TEXT NOT NULL, `entity` INTEGER NOT NULL, `total` INTEGER NOT NULL, `productId` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `ordered_products` (`id` INTEGER NOT NULL, `image` TEXT NOT NULL, `name` TEXT NOT NULL, `price` INTEGER NOT NULL, `type` TEXT NOT NULL, `entity` INTEGER NOT NULL, `total` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '272028e8398d62834cc0c78847054597')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '68b4c1e7585b2f24df55824dcfdad2f8')");
       }
 
       @Override
@@ -115,15 +115,14 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoProducts + "\n"
                   + " Found:\n" + _existingProducts);
         }
-        final HashMap<String, TableInfo.Column> _columnsOrderedProducts = new HashMap<String, TableInfo.Column>(8);
-        _columnsOrderedProducts.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashMap<String, TableInfo.Column> _columnsOrderedProducts = new HashMap<String, TableInfo.Column>(7);
+        _columnsOrderedProducts.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("image", new TableInfo.Column("image", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("price", new TableInfo.Column("price", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("type", new TableInfo.Column("type", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("entity", new TableInfo.Column("entity", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrderedProducts.put("total", new TableInfo.Column("total", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsOrderedProducts.put("productId", new TableInfo.Column("productId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysOrderedProducts = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesOrderedProducts = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoOrderedProducts = new TableInfo("ordered_products", _columnsOrderedProducts, _foreignKeysOrderedProducts, _indicesOrderedProducts);
@@ -135,7 +134,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "272028e8398d62834cc0c78847054597", "50d301ed5cc49a4a6443bfae0fb7cde4");
+    }, "68b4c1e7585b2f24df55824dcfdad2f8", "f92e1cccbd3b84f816c834017cfe4210");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

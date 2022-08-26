@@ -1,334 +1,330 @@
 [
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_profile.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_profile.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-anydpi_ic_person.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-anydpi/ic_person.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/xml/data_extraction_rules.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_btn_background_rounded.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/btn_background_rounded.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_basket.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_basket.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_auth.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_auth.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_circle_minus.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_circle_minus.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_person.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-xhdpi/ic_person.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_rounded_bg.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/rounded_bg.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_rounded_button_bg.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/rounded_button_bg.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_shopping_cart.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_shopping_cart.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_im_profile.Jpeg.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/im_profile.Jpeg"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_history.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_history.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_headset.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_headset.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_phone.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-mdpi/ic_phone.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_person.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-xxhdpi/ic_person.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_activity_main.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/activity_main.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_details.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_details.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_shape_rounded_top_corners.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/shape_rounded_top_corners.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/font_inter.ttf.flat",
+        "source": "com.example.bazar1177s.app-main-59:/font/inter.ttf"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-hdpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/color_button_background_color_selector.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/color/button_background_color_selector.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_order.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_order.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_rounded_bg.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/rounded_bg.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_btn_red_background_rounded.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/btn_red_background_rounded.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_discount_rounded_border_category.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/discount_rounded_border_category.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_confirm.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_confirm.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_edit.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_edit.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_home.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_home.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_img_apple.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/img_apple.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_background_circle_image.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/background_circle_image.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_shop.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/item_shop.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_circle_plus.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_circle_plus.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_cancel.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_cancel.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_back_red_rounded.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/back_red_rounded.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-xhdpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_clear_history.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_clear_history.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_phone.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-hdpi/ic_phone.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_phone.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-xhdpi/ic_phone.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_splash.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_splash.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_discount.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/item_discount.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_cancel.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_cancel.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_img_apple.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/img_apple.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_apple.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_apple.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_back.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_back.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_person.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-hdpi/ic_person.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_arrow_right.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_arrow_right.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_home.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_home.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_green_apple.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/green_apple.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_round_remove_24.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_round_remove_24.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_im_profile.Jpeg.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/im_profile.Jpeg"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_round_add_24.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_round_add_24.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_person.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-mdpi/ic_person.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_cost_background.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/cost_background.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_product_order.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_product_order.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_rounded_bg_fruit.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-xxhdpi/rounded_bg_fruit.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_round_remove_24.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_round_remove_24.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_basket.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_basket.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_phone.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-xxhdpi/ic_phone.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_outline_shopping_cart_24.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_outline_shopping_cart_24.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_btn_red_background_rounded.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/btn_red_background_rounded.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_shopping_cart.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/item_shopping_cart.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_circler_white_border.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/circler_white_border.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_img_brad_logo.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/img_brad_logo.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/color_button_background_color_selector.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/color/button_background_color_selector.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/font_inter.ttf.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/font/inter.ttf"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_details.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_details.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_discount_rounded_border_category.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/discount_rounded_border_category.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_discount.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_discount.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_person.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-mdpi/ic_person.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_im_apelsin.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/im_apelsin.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_discount_plus.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_discount_plus.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_person.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-xxhdpi/ic_person.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_history.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_history.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_green_apple.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/green_apple.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_phone.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-mdpi/ic_phone.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_cart_horizontal.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_cart_horizontal.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_profile.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_profile.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_btn_background_rounded.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/btn_background_rounded.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_cart_horizontal.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/item_cart_horizontal.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_phone.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-hdpi/ic_phone.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_circle_minus.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_circle_minus.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-xxhdpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_phone.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-xxhdpi/ic_phone.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_basket.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_basket.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_im_apelsin.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/im_apelsin.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-anydpi_ic_person.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-anydpi/ic_person.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_order.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_order.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_person.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-xhdpi/ic_person.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_auth.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_auth.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_shape_rounded_top_corners.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/shape_rounded_top_corners.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_rounded_button_bg.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/rounded_button_bg.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_background_circle_image.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/background_circle_image.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-mdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-mdpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_fragment_basket.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/fragment_basket.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/xml_backup_rules.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/xml/backup_rules.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_arrow_right.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_arrow_right.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_clear_history.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_clear_history.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-ldpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_confirm.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_confirm.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_apple.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_apple.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_main_ads.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/item_main_ads.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_outline_shopping_cart_24.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_outline_shopping_cart_24.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_back_green_rounded.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/back_green_rounded.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-anydpi_ic_phone.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-anydpi/ic_phone.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_img_brad_logo.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/img_brad_logo.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-xhdpi_ic_phone.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-xhdpi/ic_phone.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_shop.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_shop.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/layout_activity_main.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_circler_white_border.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/circler_white_border.xml"
     },
     {
         "merged": "com.example.bazar1177s.app-merged_res-57:/layout_item_product_order.xml.flat",
         "source": "com.example.bazar1177s.app-main-59:/layout/item_product_order.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-xxhdpi_rounded_bg_fruit.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable-xxhdpi/rounded_bg_fruit.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/xml/backup_rules.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_cost_background.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/cost_background.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_edit.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_edit.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.bazar1177s.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_circle_plus.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_circle_plus.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.bazar1177s.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_round_add_24.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_round_add_24.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_discount_plus.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_discount_plus.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-hdpi_ic_person.png.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-hdpi/ic_person.png"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_item_main_ads.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/item_main_ads.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_back_red_rounded.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/back_red_rounded.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_ic_back.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/ic_back.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/navigation_main_graph.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/navigation/main_graph.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable_back_green_rounded.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/drawable/back_green_rounded.xml"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable-anydpi_ic_phone.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable-anydpi/ic_phone.xml"
     },
     {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/layout_fragment_splash.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/layout/fragment_splash.xml"
-    },
-    {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/navigation_main_graph.xml.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-main-59:/navigation/main_graph.xml"
-    },
-    {
-        "merged": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-merged_res-57:/drawable-ldpi_ic_launcher_foreground.png.flat",
-        "source": "/home/bogibek/.gradle/daemon/7.3.3/com.example.bazar1177s.app-pngs-52:/drawable-ldpi/ic_launcher_foreground.png"
+        "merged": "com.example.bazar1177s.app-merged_res-57:/drawable_ic_headset.xml.flat",
+        "source": "com.example.bazar1177s.app-main-59:/drawable/ic_headset.xml"
     }
 ]
