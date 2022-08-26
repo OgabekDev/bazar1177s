@@ -1,0 +1,147 @@
+{
+  "abi": "X86_64",
+  "info": {
+    "abi": "X86_64",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/x86_64",
+  "soFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj/local/x86_64",
+  "soRepublishFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/ndkBuild/debug/obj/local/x86_64",
+  "abiPlatformVersion": 21,
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx",
+      "intermediatesBaseFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates",
+      "intermediatesFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app",
+      "moduleBuildFile": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build.gradle",
+      "makeFile": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "ndkFolder": "/home/bogibek/Android/Sdk/ndk/24.0.8215888",
+      "ndkVersion": "24.0.8215888",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "SYSTEM",
+      "ndkMetaPlatforms": {
+        "min": 19,
+        "max": 32,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31,
+          "Sv2": 32
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake",
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s",
+        "sdkFolder": "/home/bogibek/Android/Sdk",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "outputOptions": []
+    },
+    "prefabClassPaths": [],
+    "prefabPackages": [],
+    "prefabPackageConfigurations": [],
+    "stlType": "system",
+    "optimizationTag": "Debug"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/prefab/x86_64",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "d4c4252p3r4p1w232rt4i10cd6r6s13i6i2n1s5hu5l6o3w3y1i6s3v55",
+  "configurationArguments": [
+    "NDK_PROJECT_PATH\u003dnull",
+    "APP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "NDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk",
+    "APP_ABI\u003dx86_64",
+    "NDK_ALL_ABIS\u003dx86_64",
+    "NDK_DEBUG\u003d1",
+    "APP_PLATFORM\u003dandroid-21",
+    "NDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj",
+    "NDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib"
+  ],
+  "intermediatesParentFolder": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p"
+}

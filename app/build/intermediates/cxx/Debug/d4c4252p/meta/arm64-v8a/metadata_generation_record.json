@@ -1,0 +1,44 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 21 min SDK version: arm64-v8a",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2116798819
+  },
+  {
+    "level_": 0,
+    "message_": "JSON \u0027/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1521492364
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1075462398
+  }
+]

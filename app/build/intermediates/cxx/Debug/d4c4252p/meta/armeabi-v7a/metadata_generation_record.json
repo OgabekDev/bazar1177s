@@ -1,0 +1,198 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 21 min SDK version: armeabi-v7a",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -458450497
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON /home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a/android_gradle_build.json due to:",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -75793263
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json /home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a/android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -134720875
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file /home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a/metadata_generation_command.txt, will remove stale json folder",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1864748883
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1588569297
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a\u0027",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1159938146
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a\u0027",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1504129322
+  },
+  {
+    "level_": 0,
+    "message_": "executing ndkBuild Executable : /home/bogibek/Android/Sdk/ndk/24.0.8215888/ndk-build\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk\nNDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk\nAPP_ABI\u003darmeabi-v7a\nNDK_ALL_ABIS\u003darmeabi-v7a\nNDK_DEBUG\u003d1\nAPP_PLATFORM\u003dandroid-21\nNDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj\nNDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 679578960
+  },
+  {
+    "level_": 0,
+    "message_": "Executable : /home/bogibek/Android/Sdk/ndk/24.0.8215888/ndk-build\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk\nNDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk\nAPP_ABI\u003darmeabi-v7a\nNDK_ALL_ABIS\u003darmeabi-v7a\nNDK_DEBUG\u003d1\nAPP_PLATFORM\u003dandroid-21\nNDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj\nNDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 613445085
+  },
+  {
+    "level_": 0,
+    "message_": "parse and convert ndk-build output to build configuration JSON",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1148914686
+  },
+  {
+    "level_": 0,
+    "message_": "found application make file /home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -108502939
+  },
+  {
+    "level_": 0,
+    "message_": "done executing ndkBuild",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1281206044
+  },
+  {
+    "level_": 0,
+    "message_": "write command file /home/bogibek/AndroidStudioProjects/bazar1177s/app/build/.cxx/Debug/d4c4252p/armeabi-v7a/metadata_generation_command.txt",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -87033125
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 37157536
+  }
+]

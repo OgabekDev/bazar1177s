@@ -1,0 +1,64 @@
+{
+  "buildFiles": [
+    "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/bogibek/Android/Sdk/ndk/24.0.8215888/ndk-build",
+      "NDK_PROJECT_PATH\u003dnull",
+      "APP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+      "NDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk",
+      "APP_ABI\u003dx86",
+      "NDK_ALL_ABIS\u003dx86",
+      "NDK_DEBUG\u003d1",
+      "APP_PLATFORM\u003dandroid-21",
+      "NDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj",
+      "NDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/bogibek/Android/Sdk/ndk/24.0.8215888/ndk-build",
+    "NDK_PROJECT_PATH\u003dnull",
+    "APP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+    "NDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk",
+    "APP_ABI\u003dx86",
+    "NDK_ALL_ABIS\u003dx86",
+    "NDK_DEBUG\u003d1",
+    "APP_PLATFORM\u003dandroid-21",
+    "NDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj",
+    "NDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "keys-debug-x86": {
+      "buildCommandComponents": [
+        "/home/bogibek/Android/Sdk/ndk/24.0.8215888/ndk-build",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Android.mk",
+        "NDK_APPLICATION_MK\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/src/main/jni/Application.mk",
+        "APP_ABI\u003dx86",
+        "NDK_ALL_ABIS\u003dx86",
+        "NDK_DEBUG\u003d1",
+        "APP_PLATFORM\u003dandroid-21",
+        "NDK_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj",
+        "NDK_LIBS_OUT\u003d/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/lib",
+        "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj/local/x86/libkeys.so"
+      ],
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "keys",
+      "output": "/home/bogibek/AndroidStudioProjects/bazar1177s/app/build/intermediates/cxx/Debug/d4c4252p/obj/local/x86/libkeys.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cCompilerExecutable": "/home/bogibek/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}
