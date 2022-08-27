@@ -50,6 +50,10 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
             findNavController().navigate(R.id.action_profileFragment_to_authFragment)
         }
 
+        binding.icBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         binding.llHistory.setOnClickListener {
             Toast.makeText(requireContext(),"History is not available in this version of app. Please update the app", Toast.LENGTH_SHORT).show()
         }

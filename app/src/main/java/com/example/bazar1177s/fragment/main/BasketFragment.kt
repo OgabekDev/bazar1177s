@@ -71,6 +71,10 @@ class   BasketFragment:Fragment(R.layout.fragment_basket) {
             }
         }
 
+        binding.icBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.getProductsState.collect() {

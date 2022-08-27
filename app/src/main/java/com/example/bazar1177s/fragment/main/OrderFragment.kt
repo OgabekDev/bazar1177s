@@ -50,6 +50,11 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
                 //do something here
             }
         }
+
+        binding.icBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
     }
 
     private fun setObservers() {

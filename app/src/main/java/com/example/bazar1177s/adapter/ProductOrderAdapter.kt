@@ -36,7 +36,7 @@ class ProductOrderAdapter : ListAdapter<ProductOrder, ProductOrderAdapter.VH>(IT
                 val imageByteArray = Base64.decode(product.image, Base64.DEFAULT)
                 Glide.with(ivProduct).load(imageByteArray).into(ivProduct)
                 tvProductName.text = product.name
-                tvProductPrice.text = "1 kg = ${product.price} UZS"
+                tvProductPrice.text = "1 ${product.type} = ${product.price} UZS"
                 tvAmount.text = "${product.entity} ${product.type}"
                 tvTotal.text = "${product.total} UZS"
                 ivCancel.setOnClickListener {

@@ -59,6 +59,10 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             }
         }
 
+        binding.icBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         with(binding) {
             icBack.setOnClickListener {
                 activity?.onBackPressed()
@@ -140,16 +144,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.ivMinus.visibility = View.VISIBLE
         binding.tvProductWeight.visibility = View.VISIBLE
         binding.tvProductWeight.text = "$amount ${data.type.name}"
-
-//        product.apply {
-//            type = data.type.name
-//            entity = amount
-//            image = data.image.data
-//            name = data.name
-//            price = data.price
-//            total = entity * price
-//            productId = data.id
-//        }
 
         product = ProductOrder(
             type = data.type.name, entity = amount,
