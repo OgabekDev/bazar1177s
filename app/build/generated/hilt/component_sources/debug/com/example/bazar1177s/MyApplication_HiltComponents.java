@@ -7,12 +7,14 @@ import com.example.bazar1177s.fragment.auth.AuthFragment_GeneratedInjector;
 import com.example.bazar1177s.fragment.main.BasketFragment_GeneratedInjector;
 import com.example.bazar1177s.fragment.main.DetailsFragment_GeneratedInjector;
 import com.example.bazar1177s.fragment.main.HomeFragment_GeneratedInjector;
+import com.example.bazar1177s.fragment.main.OrderFragment_GeneratedInjector;
 import com.example.bazar1177s.fragment.main.ProfileFragment_GeneratedInjector;
 import com.example.bazar1177s.fragment.splash.SplashFragment_GeneratedInjector;
 import com.example.bazar1177s.viewmodel.AuthViewModel_HiltModules;
 import com.example.bazar1177s.viewmodel.BasketViewModel_HiltModules;
 import com.example.bazar1177s.viewmodel.DetailsViewModel_HiltModules;
 import com.example.bazar1177s.viewmodel.MainViewModel_HiltModules;
+import com.example.bazar1177s.viewmodel.OrderProductViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -161,7 +163,8 @@ public final class MyApplication_HiltComponents {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           MainViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
-          ViewModelCBuilderModule.class
+          ViewModelCBuilderModule.class,
+          OrderProductViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -201,7 +204,8 @@ public final class MyApplication_HiltComponents {
           BasketViewModel_HiltModules.BindsModule.class,
           DetailsViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
-          MainViewModel_HiltModules.BindsModule.class
+          MainViewModel_HiltModules.BindsModule.class,
+          OrderProductViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped
@@ -230,6 +234,7 @@ public final class MyApplication_HiltComponents {
       BasketFragment_GeneratedInjector,
       DetailsFragment_GeneratedInjector,
       HomeFragment_GeneratedInjector,
+      OrderFragment_GeneratedInjector,
       ProfileFragment_GeneratedInjector,
       SplashFragment_GeneratedInjector,
       FragmentComponent,

@@ -26,6 +26,7 @@ import com.example.bazar1177s.fragment.auth.AuthFragment_MembersInjector;
 import com.example.bazar1177s.fragment.main.BasketFragment;
 import com.example.bazar1177s.fragment.main.DetailsFragment;
 import com.example.bazar1177s.fragment.main.HomeFragment;
+import com.example.bazar1177s.fragment.main.OrderFragment;
 import com.example.bazar1177s.fragment.main.ProfileFragment;
 import com.example.bazar1177s.fragment.main.ProfileFragment_MembersInjector;
 import com.example.bazar1177s.fragment.splash.SplashFragment;
@@ -35,6 +36,7 @@ import com.example.bazar1177s.repository.AuthRepository;
 import com.example.bazar1177s.repository.BasketRepository;
 import com.example.bazar1177s.repository.DetailsRepository;
 import com.example.bazar1177s.repository.HomeRepository;
+import com.example.bazar1177s.repository.OrderRepository;
 import com.example.bazar1177s.viewmodel.AuthViewModel;
 import com.example.bazar1177s.viewmodel.AuthViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.bazar1177s.viewmodel.BasketViewModel;
@@ -43,6 +45,8 @@ import com.example.bazar1177s.viewmodel.DetailsViewModel;
 import com.example.bazar1177s.viewmodel.DetailsViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.bazar1177s.viewmodel.MainViewModel;
 import com.example.bazar1177s.viewmodel.MainViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.bazar1177s.viewmodel.OrderProductViewModel;
+import com.example.bazar1177s.viewmodel.OrderProductViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.google.firebase.auth.FirebaseAuth;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
@@ -369,6 +373,10 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectOrderFragment(OrderFragment orderFragment) {
+    }
+
+    @Override
     public void injectProfileFragment(ProfileFragment profileFragment) {
       injectProfileFragment2(profileFragment);
     }
@@ -449,7 +457,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(4).add(AuthViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(BasketViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DetailsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(5).add(AuthViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(BasketViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DetailsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OrderProductViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -483,6 +491,8 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     private Provider<MainViewModel> mainViewModelProvider;
 
+    private Provider<OrderProductViewModel> orderProductViewModelProvider;
+
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam) {
       this.singletonCImpl = singletonCImpl;
@@ -508,17 +518,22 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       return new HomeRepository(singletonCImpl.productService(), singletonCImpl.tvShowDaoProvider.get());
     }
 
+    private OrderRepository orderRepository() {
+      return new OrderRepository(singletonCImpl.productService(), singletonCImpl.productOrderDaoProvider.get());
+    }
+
     @SuppressWarnings("unchecked")
     private void initialize(final SavedStateHandle savedStateHandleParam) {
       this.authViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
       this.basketViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.detailsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.mainViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
+      this.orderProductViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(4).put("com.example.bazar1177s.viewmodel.AuthViewModel", ((Provider) authViewModelProvider)).put("com.example.bazar1177s.viewmodel.BasketViewModel", ((Provider) basketViewModelProvider)).put("com.example.bazar1177s.viewmodel.DetailsViewModel", ((Provider) detailsViewModelProvider)).put("com.example.bazar1177s.viewmodel.MainViewModel", ((Provider) mainViewModelProvider)).build();
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(5).put("com.example.bazar1177s.viewmodel.AuthViewModel", ((Provider) authViewModelProvider)).put("com.example.bazar1177s.viewmodel.BasketViewModel", ((Provider) basketViewModelProvider)).put("com.example.bazar1177s.viewmodel.DetailsViewModel", ((Provider) detailsViewModelProvider)).put("com.example.bazar1177s.viewmodel.MainViewModel", ((Provider) mainViewModelProvider)).put("com.example.bazar1177s.viewmodel.OrderProductViewModel", ((Provider) orderProductViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -553,6 +568,9 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
           case 3: // com.example.bazar1177s.viewmodel.MainViewModel 
           return (T) new MainViewModel(viewModelCImpl.homeRepository());
+
+          case 4: // com.example.bazar1177s.viewmodel.OrderProductViewModel 
+          return (T) new OrderProductViewModel(viewModelCImpl.orderRepository());
 
           default: throw new AssertionError(id);
         }
