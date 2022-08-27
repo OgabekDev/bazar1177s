@@ -12,11 +12,14 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.bazar1177s.R
 import com.example.bazar1177s.adapter.ProductOrderAdapter
 import com.example.bazar1177s.databinding.FragmentOrderBinding
+import com.example.bazar1177s.model.ProductOrder
 import com.example.bazar1177s.utils.UiStateList
 import com.example.bazar1177s.utils.UiStateObject
 import com.example.bazar1177s.viewmodel.OrderProductViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class OrderFragment : Fragment(R.layout.fragment_order) {
     private val binding by viewBinding(FragmentOrderBinding::bind)
     private val adapter by lazy { ProductOrderAdapter() }
@@ -43,6 +46,9 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
             bBuyurtmaBekorQilish.setOnClickListener {
                 viewModel.clearOrder()
             }
+            bBuyurtmaTasdiqlash.setOnClickListener {
+                //do something here
+            }
         }
     }
 
@@ -56,9 +62,10 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
                         }
                         is UiStateList.SUCCESS -> {
                             adapter.submitList(it.data)
+                            initData(it.data)
                         }
                         is UiStateList.ERROR -> {
-
+                            adapter.submitList(listOf())
                         }
                         else -> Unit
 
@@ -103,5 +110,14 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
                 }
             }
         }
+    }
+
+    private fun initData(data: List<ProductOrder>) {
+        var total: Long = 0
+        data.forEach {
+            total += it.total
+        }
+        binding.tvUmumiyNarx.text = "$total"
+        binding.tvYetkazibBerishNarx.text = "$total"
     }
 }

@@ -30,7 +30,10 @@ class DetailsViewModel @Inject constructor(
     private val _saveProduct = MutableStateFlow<UiStateObject<Boolean>>(UiStateObject.EMPTY)
     var saveProduct = _saveProduct
 
-    fun getProduct(id: Int) = viewModelScope.launch {
+    private val _deleteProduct = MutableStateFlow<UiStateObject<Boolean>>(UiStateObject.EMPTY)
+    var deleteProduct = _deleteProduct
+
+    fun getProduct(id: Long) = viewModelScope.launch {
         _getProductState.value = UiStateObject.LOADING
         try {
             val response = detailsRepository.getProduct(id)
@@ -63,6 +66,16 @@ class DetailsViewModel @Inject constructor(
             _saveProduct.value = UiStateObject.SUCCESS(true)
         } catch (e: Exception) {
             _saveProduct.value = UiStateObject.ERROR(e.localizedMessage)
+        }
+    }
+
+    fun delete(id:Long)=viewModelScope.launch {
+        _deleteProduct.value = UiStateObject.LOADING
+        try {
+            var product = detailsRepository.delete(id)
+            _deleteProduct.value = UiStateObject.SUCCESS(true)
+        } catch (e: Exception) {
+            _deleteProduct.value = UiStateObject.ERROR(e.localizedMessage)
         }
     }
 }

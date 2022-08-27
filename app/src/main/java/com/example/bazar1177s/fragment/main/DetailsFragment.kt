@@ -1,40 +1,34 @@
 package com.example.bazar1177s.fragment.main
 
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.os.Bundle
 import android.text.Editable
 import android.util.Base64
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.bumptech.glide.Glide
 import com.example.bazar1177s.R
 import com.example.bazar1177s.databinding.FragmentDetailsBinding
-import com.example.bazar1177s.model.DiscountProduct
 import com.example.bazar1177s.model.Product
 import com.example.bazar1177s.model.ProductOrder
 import com.example.bazar1177s.utils.TextWatcherWrapper
 import com.example.bazar1177s.utils.UiStateObject
 import com.example.bazar1177s.viewmodel.DetailsViewModel
-import com.google.gson.Gson
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 private const val TAG = "DetailsFragment"
 
 @AndroidEntryPoint
 class DetailsFragment : Fragment(R.layout.fragment_details) {
-    var productId: Int = 0
+    var productId: Long = 0
     private var amount: Int = 0
     private lateinit var product: ProductOrder
     private val binding by viewBinding(FragmentDetailsBinding::bind)
@@ -42,11 +36,11 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            productId = it.getInt("productId")
+            productId = it.getLong("productId")
         }
 
+        viewModel.getAmount(productId = productId)
         viewModel.getProduct(productId)
-        viewModel.getAmount(productId = productId.toLong())
 
     }
 
@@ -94,7 +88,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     private fun setUpObservers() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.getProductState.collect() {
+                viewModel.getProductState.collect {
                     when (it) {
                         is UiStateObject.LOADING -> {
                             showLoading()
@@ -123,6 +117,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                         }
                         is UiStateObject.SUCCESS -> {
                             amount = it.data
+//                            binding.tvProductWeight.text = "$amount ${product.type}"
                         }
                         is UiStateObject.ERROR -> {
                             amount = 0
@@ -144,7 +139,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.ivPlus.visibility = View.VISIBLE
         binding.ivMinus.visibility = View.VISIBLE
         binding.tvProductWeight.visibility = View.VISIBLE
-        binding.tvProductWeight.text = "0 ${data.type.name}"
+        binding.tvProductWeight.text = "$amount ${data.type.name}"
 
 //        product.apply {
 //            type = data.type.name
@@ -156,9 +151,11 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 //            productId = data.id
 //        }
 
-        product = ProductOrder(type = data.type.name, entity = amount,
+        product = ProductOrder(
+            type = data.type.name, entity = amount,
             image = data.image.data, name = data.name, price = data.price,
-            total = amount * data.price, id = data.id)
+            total = amount * data.price, id = data.id
+        )
 
     }
 
@@ -184,6 +181,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         product.total = product.price * product.entity
 
         if (product.entity > 0) viewModel.saveProduct(product)
+        if (product.entity == 0) viewModel.delete(product.id)
 
         amount = 0
 

@@ -11,7 +11,8 @@ class DetailsRepository @Inject constructor(
     private val productService: ProductService,
     private val dao: ProductOrderDao
 ) {
-    suspend fun getProduct(id: Int) = productService.getProduct(id)
+    suspend fun getProduct(id: Long) = productService.getProduct(id)
     suspend fun saveProduct(product: ProductOrder)=dao.addProduct(product)
     suspend fun getAmount(productId:Long)=dao.getAmount(productId)
+    suspend fun delete(id:Long)=dao.deleteProduct(id)
 }

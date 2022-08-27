@@ -17,7 +17,7 @@ import com.example.bazar1177s.utils.Constants.BASE_URL_IMAGE
 
 class DiscountAdapter : ListAdapter<DiscountProduct, DiscountAdapter.DiscountProductViewHolder>(ITEM_DIF) {
     private  val TAG = "CarouselProductAdapter"
-    var onClick: ((Int) -> Unit)? = null
+    var onClick: ((Long) -> Unit)? = null
     var count:Int=0
 
     companion object {
@@ -56,7 +56,7 @@ class DiscountAdapter : ListAdapter<DiscountProduct, DiscountAdapter.DiscountPro
                 }
 
                 llItemDiscount.setOnClickListener {
-                    onClick?.invoke(item.product.id.toInt())
+                    onClick?.invoke(item.product.id)
                 }
             }
         }

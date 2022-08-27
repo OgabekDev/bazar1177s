@@ -6,10 +6,12 @@ import com.example.bazar1177s.model.ProductOrder
 import com.example.bazar1177s.repository.OrderRepository
 import com.example.bazar1177s.utils.UiStateList
 import com.example.bazar1177s.utils.UiStateObject
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class OrderProductViewModel @Inject constructor(private val repository: OrderRepository) :
     ViewModel() {
 
@@ -26,11 +28,8 @@ class OrderProductViewModel @Inject constructor(private val repository: OrderRep
         _products.value = UiStateList.LOADING
         try {
             val response = repository.getProducts()
-            if (response.isNotEmpty()) {
-                _products.value = UiStateList.SUCCESS(response)
-            } else {
-                _products.value = UiStateList.ERROR("Product is not saved")
-            }
+            _products.value = UiStateList.SUCCESS(response)
+
         } catch (e: Exception) {
             _products.value = UiStateList.ERROR("Product is not saved")
         }
@@ -47,8 +46,8 @@ class OrderProductViewModel @Inject constructor(private val repository: OrderRep
         }
     }
 
-    fun clearOrder()=viewModelScope.launch {
-        _cleared.value=UiStateObject.LOADING
+    fun clearOrder() = viewModelScope.launch {
+        _cleared.value = UiStateObject.LOADING
         try {
             val response = repository.clearProducts()
             _cleared.value = UiStateObject.SUCCESS(true)
